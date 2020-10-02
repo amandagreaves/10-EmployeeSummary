@@ -6,66 +6,66 @@ class Questions {
             {
                 type: "input",
                 name: "name",
-                message: "What is the manager's name?"
+                message: "What is your manager's name?"
             },
             {
                 type: "input",
                 name: "id",
-                message: "What is the employee id?"
+                message: "What is your manager's employee id?"
             },
             {
                 type: "input",
                 name: "email",
-                message: "What is their email?"
+                message: "What is your manager's email?"
             },
             {
                 type: "input",
                 name: "officeNumber",
-                message: "What is the office number?"
+                message: "What is your manager's office number?"
             }
         ];
         this.intern = [
             {
                 type: "input",
                 name: "name",
-                message: "What is the intern's name?"
+                message: "What is your intern's name?"
             },
             {
                 type: "input",
                 name: "id",
-                message: "What is their employee id?"
+                message: "What is your intern's employee id?"
             },
             {
                 type: "input",
                 name: "email",
-                message: "What is their email?"
+                message: "What is your intern's email?"
             },
             {
                 type: "input",
                 name: "school",
-                message: "What is the name of their school?"
+                message: "What school does your intern attend?"
             }
         ];
         this.engineer = [
             {
                 type: "input",
                 name: "name",
-                message: "What is the engineer's name?"
+                message: "What is your engineer's name?"
             },
             {
                 type: "input",
                 name: "id",
-                message: "What is their employee id?"
+                message: "What is your engineer's employee id?"
             },
             {
                 type: "input",
                 name: "email",
-                message: "What is their email?"
+                message: "What is your engineer's email?"
             },
             {
                 type: "input",
                 name: "github",
-                message: "What is their GitHub username?"
+                message: "What is your engineer's GitHub username?"
             }
         ];
     }
@@ -77,7 +77,7 @@ class Questions {
             message: "What is the role of the employee?",
             choices: ["Manager", "Intern", "Engineer"],
             filter: function (val) {
-              return val.toLowerCase();
+            return val.toLowerCase();
             }
         }
         return inquirer.prompt(questions);
